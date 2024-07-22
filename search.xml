@@ -4,18 +4,39 @@
   
     
     <entry>
-      <title>程设入门指北 (WIP)</title>
-      <link href="/2024/07/21/fop-walkthrough-01/"/>
-      <url>/2024/07/21/fop-walkthrough-01/</url>
+      <title>程设指北（一）</title>
+      <link href="/tutorial/fop-walkthrough/fop-walkthrough-01/"/>
+      <url>/tutorial/fop-walkthrough/fop-walkthrough-01/</url>
       
-        <content type="html"><![CDATA[<h2 id="写在前面">写在前面</h2><p>开始更新这一系列。之前实践队<a href="https://mp.weixin.qq.com/s/H4OHwiZjyypBYFQxYkYo8g">队员介绍</a>里有开玩笑说“编写 100 字以上文本需要 AI 辅助”，从上一篇的暑假计划来看，自己写确实文笔不大行……慢慢锻炼吧。</p><p><img src="https://tsxb-top-pic.oss-cn-hangzhou.aliyuncs.com/pics/202407220007869.png" alt="暑假实践的自我介绍"></p><p>《程序设计基础》，jwxt 里也没给出它的英文名，暂且叫 FOP(Fundamentals of Programming) 吧。为什么要写 FOP 的攻略呢？我自己有一定的编程基础，刚进学校的时候，对程设课可谓是满怀希望；结果第一节课就给我听困了。三节课将近 2 个小时的时间，老师拼命地不停地讲，如果有认真听的同学，想必听完也已经头昏脑涨了；结果 45 分钟的晚饭时间之后就是 2 小时的上机……</p><p>此外，看老师发的 PPT——太长了。每个课件差不多都有 100 页，其中既有讲语法的，也有讲码风的，也有讲历史、思想的，引经据典，实在是不简洁。</p><p>再看课程的教学目标，语法、方法一类的知识点，课上当然是都覆盖了。但有关养成良好的编程风格和习惯、获取技术资料的能力、掌握编程集成开发环境等的“软”知识点，好像就比较零散了。从我的视角来看：有关时间复杂度的问题差不多是程设期末前讲的；“DevC++ 如何调试”这个问题是大一下的助教在课后召集同学说的；而关于怎么找别人调试代码，应该如何截图（而不是拍屏或者复制粘贴）、录屏，如何加注释等问题，好像没有提过（但通知群里好像发过文档）。</p><p>这就导致大家的水平参差不齐，到了大一下帮同学调试 DS（Data Structure，数据结构）大作业的时候，有的代码写的已经很优美了，而有的码风还处在原始时期……</p><p><img src="https://tsxb-top-pic.oss-cn-hangzhou.aliyuncs.com/pics/202407220028801.png" alt="从 jwxt 里截取的 FOP 的教学目标，但不知道是什么时候写的。"></p><p>所以想写一系列的文章，少量讲讲 C 语言相关知识点之外，能让读到的新同学把更多注意力放在这些“软”知识点上。此外，还会放一些常用代码片段，考试的时候可以作为本地资料带上。</p><p>最好就是能够让你一年以后，尽管写不出正确的大作业代码，也能让帮你调试的同学/助教缓解一下视觉疲劳……</p><p>第一次写系列的文章，也不知道能出几篇，也没有什么结构思路，也不知道写的全不全面。如果有疏漏之处，欢迎大家指点指点我。可以到 Github Repo 上去<a href="https://github.com/tangsongxiaoba/tangsongxiaoba.github.io/issues">提交 Issue</a>，可以发<a href="mailto:tangsongxiaoba@163.com">邮件</a>给我，也可以加我的<a href="/about">微信/QQ</a>交流！</p><h2 id="目录">目录</h2><p>WIP</p>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
       
       <categories>
           
           <category> 教程 </category>
           
-          <category> 程设入门指北 </category>
+          <category> 程设指北 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>程设指北 (WIP)</title>
+      <link href="/tutorial/fop-walkthrough/fop-walkthrough/"/>
+      <url>/tutorial/fop-walkthrough/fop-walkthrough/</url>
+      
+        <content type="html"><![CDATA[<h2 id="写在前面">写在前面</h2><p>开始更新这一系列。之前实践队<a href="https://mp.weixin.qq.com/s/H4OHwiZjyypBYFQxYkYo8g">队员介绍</a>里有开玩笑说“编写 100 字以上文本需要 AI 辅助”，从上一篇的暑假计划来看，自己写确实文笔不大行……慢慢锻炼吧。</p><p><img src="https://tsxb-top-pic.oss-cn-hangzhou.aliyuncs.com/pics/202407220007869.png" alt="暑假实践的自我介绍" /></p><p>《程序设计基础》，jwxt 里也没给出它的英文名，暂且叫 FOP(Fundamentals of Programming) 吧。为什么要写 FOP 的攻略呢？我自己有一定的编程基础，刚进学校的时候，对程设课可谓是满怀希望；结果第一节课就给我听困了。三节课将近 2 个小时的时间，老师拼命地不停地讲，如果有认真听的同学，想必听完也已经头昏脑涨了；结果 45 分钟的晚饭时间之后就是 2 小时的上机……</p><p>此外，看老师发的 PPT——太长了。每个课件差不多都有 100 页，其中既有讲语法的，也有讲码风的，也有讲历史、思想的，引经据典，实在是不简洁。</p><p>再看课程的教学目标，语法、方法一类的知识点，课上当然是都覆盖了。但有关养成良好的编程风格和习惯、获取技术资料的能力、掌握编程集成开发环境等的“软”知识点，好像就比较零散了。从我的视角来看：有关时间复杂度的问题差不多是程设期末前讲的；“DevC++ 如何调试”这个问题是大一下的助教在课后召集同学说的；而关于怎么找别人调试代码，应该如何截图（而不是拍屏或者复制粘贴）、录屏，如何加注释等问题，好像没有提过（但通知群里好像发过文档）。</p><p>这就导致大家的水平参差不齐，到了大一下帮同学调试 DS（Data Structure，数据结构）大作业的时候，有的代码写的已经很优美了，而有的码风还处在原始时期……</p><p><img src="https://tsxb-top-pic.oss-cn-hangzhou.aliyuncs.com/pics/202407220028801.png" alt="从 jwxt 里截取的 FOP 的教学目标，但不知道是什么时候写的。" /></p><p>所以想写一系列的文章，少量讲讲 C 语言相关知识点之外，能让读到的新同学把更多注意力放在这些“软”知识点上。此外，还会放一些常用代码片段，考试的时候可以作为本地资料带上。</p><p>最好就是能够让你一年以后，尽管写不出正确的大作业代码，也能让帮你调试的同学/助教缓解一下视觉疲劳……</p><p>第一次写系列的文章，也不知道能出几篇，也没有什么结构思路，也不知道写的全不全面。如果有疏漏之处，欢迎大家指点指点我。可以到 Github Repo 上去<a href="https://github.com/tangsongxiaoba/tangsongxiaoba.github.io/issues">提交 Issue</a>，可以发<a href="mailto:tangsongxiaoba@163.com">邮件</a>给我，也可以加我的<a href="/about">微信/QQ</a>交流！</p><h2 id="目录">目录</h2><ul><li><a href="/fop-walkthrough-01">程设指北（一）</a></li></ul><h2 id="关于这门课你所需要知道的">关于这门课你所需要知道的</h2><h3 id="基本情况">基本情况</h3><ul><li><strong>上课很累</strong>：程设一个星期上一次，一次性上 6 节课，晚饭前 3 节理论课，晚饭后 3 节上机课，从下午 4 点上到晚上 9 点，中间仅休息 45 分钟，强度很大（2023 级是这样的，不知道以后会不会改）。所以中午请提前休息好。（不过我们这时候程设只开半个学期，后半学期还是很爽的。）</li><li><strong>上机很难</strong>：上机 2 小时共 10 道题，难度基本递增。前面 5~6 道是基础题，难度在 <span class="label label-danger">入门</span> 到 <span class="label label-warning">普及/提高-</span> 之间；最后 1~3 道是拓展题，难度基本上在 <span class="label label-success">普及+/提高</span> 及以上（按照<a href="https://www.luogu.com.cn/">洛谷</a>的难度主观评判）。对于大部分同学来说，到程设结课为止，能做出 5 道题目已经很好了。至于刚开始上机的时候，能做出来的题目只会更少……<strong>而第一次上机，如果你一点准备（比如暑假预习 C 语言语法，学习如何使用 IDE）都没有的话，你可能在第一题就会卡很久！</strong> 每次上机都是整个大类约 1000 名同学一起参加、排名，最后排名虽然不会公示，但是在成绩计算中会有较大比重，所以还是要足够重视上机。</li></ul><p><img src="https://tsxb-top-pic.oss-cn-hangzhou.aliyuncs.com/pics/202407221141958.png" alt="当时我们第一次上机的最后一题。前面都比较常规，这题卡了我一个多小时也没想明白 qwq。" /></p><ul><li><strong>课后很忙</strong>：程设每 1~2 周会布置课后练习题，每次 10 道，平均难度比上机似乎稍微简单一些，是对上机题目的补充。没有 2 小时的时间限制，但是（当然）有截止提交的时间。个人觉得课后这个练习的总量已经足够；<strong>但如果你有某一方面的知识点掌握不牢固的，还是应该额外做 1~2 题加强一下！</strong> 因为大一上其他课程的作业也非常多，所以课后做 10 道以上的题目真的会很忙的。</li></ul><p><img src="https://tsxb-top-pic.oss-cn-hangzhou.aliyuncs.com/pics/202407221144920.png" alt="高中时期学 OI 一年也就做了 300 多道，这半个学期上机+练习+考试就有 200+ 了。" /></p><ul><li><strong>考试也难</strong>：期中/期末的题目原则上不能放出。考试的规格和平常上机一样，平均难度再稍微高一点。但这时平时上机的优势就体现出来了，考试根本不带怕的。</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+          <category> 程设指北 </category>
           
       </categories>
       
@@ -26,8 +47,8 @@
     
     <entry>
       <title>2024 年暑假计划（进行中）</title>
-      <link href="/2024/07/20/plan4-24su/"/>
-      <url>/2024/07/20/plan4-24su/</url>
+      <link href="/life/plan4-24su/"/>
+      <url>/life/plan4-24su/</url>
       
         <content type="html"><![CDATA[<h2 id="写在前面">写在前面</h2><p>不知道第几次建站了，从小学五六年级开始想着要有自己的个人网站，反复折腾，弄好又弃坑……搭建在 Github 上也有好几个版本了。反正重开一次总是要写这些话，希望它能一直开张下去之类的美好祝愿吧（</p><p>暑假刚好只剩下一个月了……前几周忙着社会实践和志愿活动，但这周回到家后好像也无所事事。遂写一份计划，列一下剩下的一个月里要做的事情吧。</p><h2 id="暑假计划">暑假计划</h2><h3 id="程设通关指北">程设通关指北</h3><ul><li>描述：暑假里打算给下一届的新同学们出一份《程序设计基础》课程的帮助。</li><li>缘由：从我们这一届来看，差距真的很大。学了一年，既有码风良好、效率优秀的，也有面向 CSDN 编程的。不多说了，希望能帮到大家吧。</li><li>成果：完成的时候这里会放 <a href="WIP">程设通关指北 (WIP)</a> 的链接。</li></ul><h3 id="折腾-NixOS">折腾 NixOS</h3><ul><li>描述：系统已经安装好了，暑假里的目标是把系统配置好。</li><li>缘由：这是个 OS as Code 的系统，能通过配置文件一键设置好整个系统，想想就觉得很爽，所以一定要折腾一下。</li><li>成果：配置文件会上传到 Github，完成的时候这里会放 repo 的链接。</li></ul><h3 id="准备数模竞赛">准备数模竞赛</h3><ul><li>描述：准备九/十月份的数学建模比赛，包括学习使用 Matlab 等等（其实我也不知道要学什么）。</li><li>缘由：年初过生日的时候被同学拉来要打数模，现在还有一个多月，感觉要寄。</li><li>成果：完成的时候放点笔记的链接。</li></ul><h3 id="预习大二课程">预习大二课程</h3><ul><li>描述：花点时间学学 CO、概统、物理等课。</li><li>缘由：害怕回去被卷死。</li><li>成果：完成的时候放点笔记的链接。</li></ul><h3 id="监督妹妹学习">监督妹妹学习</h3><ul><li>描述：妹妹过完暑假九年级了，暑假还是教教她吧，免得高中也考不上。</li><li>缘由：如上。</li><li>成果：完成的时候放张她打卡的表格。</li></ul><h3 id="折腾个人网站">折腾个人网站</h3><ul><li>描述：把个人网站上线且配置好。</li><li>缘由：因为要出《程设通关指北》啊。</li><li>成果：能有这篇文章，说明完成一半了。</li></ul><h2 id="其他安排">其他安排</h2><h3 id="学点吉他">学点吉他</h3><p>等 castle 回来去找他学学吉他。但其实想学 bass。</p><h3 id="写个-SSG">写个 SSG</h3><p>这几天网站博客配置的头疼，想自己写一个 SSG，最好能够专注于写 Markdown 而只需要极少的配置的，不知道能不能实现。</p><h3 id="学学粤语">学学粤语</h3><p>广东人怎么能不会粤语呢……寒假回访 UM 之前学会讲。</p><h2 id="清单">清单</h2><ul><li><div>            <input type="checkbox"  >程设通关指北          </div></li><li><div>            <input type="checkbox"  >折腾 NixOS          </div></li><li><div>            <input type="checkbox"  >准备数模竞赛          </div></li><li><div>            <input type="checkbox"  >预习大二课程          </div></li><li><div>            <input type="checkbox"  >监督妹妹学习          </div></li><li><div>            <input type="checkbox"  >折腾个人网站          </div></li><li><div>            <input type="checkbox"  >学点吉他          </div></li><li><div>            <input type="checkbox"  >写个 SSG          </div></li><li><div>            <input type="checkbox"  >学学粤语          </div></li></ul><h2 id="结尾">结尾</h2><p>一口气写完计划看上去还挺充足的，非常符合我天马行空而又不切实际的特质。不知道最后能完成几项啊。“暑假计划”部分截至正式开学的时间。加油吧。</p>]]></content>
       
