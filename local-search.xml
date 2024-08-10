@@ -4,6 +4,27 @@
   
   
   <entry>
+    <title>程设学习攻略（一）：IDE 的安装与使用</title>
+    <link href="/tutorial/fop-walkthrough-01/"/>
+    <url>/tutorial/fop-walkthrough-01/</url>
+    
+    <content type="html"><![CDATA[<p>集成开发环境 (IDE, Integrated Development Environment)，就是用来编写、编译、运行、调试代码的应用程序。</p><p>大一的程设和数据结构两门课程，主流 IDE 是 Dev-C++ 和 VS Code. 当然，还有 Clion，以及 Mac 上的 Xcode，等等。这里就讲讲 Dev-C++ 和 VS Code 两种 IDE 的配置，前者比较简单，功能也比较少，后者比较复杂也比较强大。</p><h2 id="Dev-C">Dev-C++</h2><h3 id="Dev-C-的安装与配置">Dev-C++ 的安装与配置</h3><p>Dev-C++ 是一个简单的 IDE，且非常古老，原公司在 2011 年就停止开发了，之后也有许多分支版本。这里推荐国内开发者开发的一个版本“小熊猫C++。<a href="http://royqh.net/redpandacpp/">点击访问官网</a></p><p>在官网上下载好安装包之后，打开并按照默认选项安装好即可。</p><p>一开始运行的时候会有配置向导，请把默认语言改为 C，深色/浅色主题请随意。然后就来到软件的界面。</p><p><img src="https://tsxb-top-pic.oss-cn-hangzhou.aliyuncs.com/pics/202408081731007.jpg" alt="小熊猫C++ 的主界面" /></p><p>如图，左上角“文件”选项可以新建/打开/保存/另存为代码文件，其下面一行工具栏中，从左到右分别是新建、打开、保存、另存为、全部保存、一键格式化代码、编译、运行、全部重编译、调试相关、编译器选项等等功能（按照图中画圈的顺序）。</p><p>打开编译器选项，在弹出的窗口右侧选择“编译/链接选项”，在“代码生成”下将“C语言标准”设置为“ISO-C90”，即 c89。然后点击“应用”和“确定”。如图所示。</p><p><img src="https://tsxb-top-pic.oss-cn-hangzhou.aliyuncs.com/pics/202408081736243.png" alt="编译器选项设置C语言标准" /></p><p>这是因为，程设课程学习使用的是最古老最严格的 c89 标准，包括 OJ 评测的标准也是如此（实际上好像没有那么严格）。</p><h3 id="Dev-C-的基本使用方法">Dev-C++ 的基本使用方法</h3><p>编写好代码之后，点击工具栏中的“编译”按钮，会弹出另存为窗口，将代码命名并且保存好之后，就会进行编译，在下方会输出编译相关信息。如图所示。</p><p><img src="https://tsxb-top-pic.oss-cn-hangzhou.aliyuncs.com/pics/202408081742653.png" alt="编译会有很多输出，是调试代码错误的重要依据" /></p><p>然后再点击“运行”按钮，就会弹出一个命令行窗口，显示程序的输出结果以及运行的时间。按下任意键即可关闭这个窗口。</p><p><img src="https://tsxb-top-pic.oss-cn-hangzhou.aliyuncs.com/pics/202408081743338.png" alt="运行界面如图所示" /></p><p>以上便是小熊猫C++ 的基本使用方法，当然还有调试等功能，放在下一篇中统一讲讲。</p><h3 id="Dev-C-运行时经常遇到的问题">Dev-C++ 运行时经常遇到的问题</h3><ul><li>代码格式混乱：一些同学经常忘记缩进、换行等，点击工具栏上的一键格式化代码，就可以得到工整的代码了。</li><li>编译报错“ld returned 1 exit status”：首先检查自己上一次运行时的命令行窗口有没有关闭，其次检查自己的代码是不是哪里写错了变量名、函数名等等。</li></ul><h2 id="VS-Code">VS Code</h2><h3 id="安装-GCC-编译器及相关工具">安装 GCC 编译器及相关工具</h3><p>Dev-C++ 是专门用来编写 C/C++ 语言的 IDE，所以自带 GCC 编译器。但是 VS Code 用途更广泛，本身是没有 GCC 编译器的，需要自己进行安装。这也是 VS Code 配置起来更麻烦的原因之一。这里准备下载的是 <a href="https://www.mingw-w64.org/">MinGW-w64</a>。</p><p>首先访问 <a href="https://github.com/skeeto/w64devkit/releases">w64devkit</a> 下载界面，在最新的 Release 的 Assets 下找到 “w64devkit-x64-x.x.x.exe”，点击按钮下载安装包。下载完成后打开并点击“extract”解压到当前文件夹下。然后在安装包同目录下找到刚刚解压好的“w64devkit”文件夹，将其复制到 C 盘根目录下并打开它。</p><p><img src="https://tsxb-top-pic.oss-cn-hangzhou.aliyuncs.com/pics/202408101924455.gif" alt="添加环境变量" /></p><p>如上图所示，左键点击地址栏的空白处，将其地址复制下来。然后右键“此电脑”打开属性，点击“高级系统设置”-“环境变量”，在“系统变量”下找到“Path”变量，双击打开，新建一个项并把刚才的地址粘贴上去，按“确定”保存。</p><p><img src="https://tsxb-top-pic.oss-cn-hangzhou.aliyuncs.com/pics/202408101931964.gif" alt="检查编译器是否存在" /></p><p>做完之后，可以按“Win+R”键打开运行，输入“cmd”打开命令行窗口，然后输入 <code>gcc -v</code> 检查编译器是否存在。如果存在，应该会如图所示返回一堆参数。否则请检查以上步骤。然后，你就完成了 GCC 编译器的安装。</p><h3 id="VS-Code-的安装与配置">VS Code 的安装与配置</h3><p>VS Code 本质上是一个简单的文本编辑器，但是它有很庞大的插件市场，使得它成为目前世界上最受欢迎的代码编辑器之一。<a href="https://code.visualstudio.com/">点击访问官网</a></p><p>官网上下载好安装包后，打开并保持默认选项安装即可。不过在“选择附加任务”界面，推荐勾选“将‘通过Code打开’操作添加到 Windows 资源管理器目录上下文菜单”，并创建桌面快捷方式。如图所示。</p><p><img src="https://tsxb-top-pic.oss-cn-hangzhou.aliyuncs.com/pics/202408082124616.png" alt="选择附加任务" />、</p><p>安装完成后打开，首先可以选择点击左侧边栏第五个按钮打开扩展界面，搜索“Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code”，安装简体中文语言包，然后点击右下角弹窗中的 “Change Language and Restart” 重载 VS Code 界面。</p><p><img src="https://tsxb-top-pic.oss-cn-hangzhou.aliyuncs.com/pics/202408082130009.png" alt="安装中文语言包" /></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>教程</category>
+      
+      <category>程设攻略</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>程设学习攻略</title>
     <link href="/tutorial/fop-walkthrough/"/>
     <url>/tutorial/fop-walkthrough/</url>
@@ -14,6 +35,8 @@
     <categories>
       
       <category>教程</category>
+      
+      <category>程设攻略</category>
       
     </categories>
     
